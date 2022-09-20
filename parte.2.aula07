@@ -1,0 +1,21 @@
+package app;
+
+import entities.Produto;
+
+public class TestaProduto {
+    public static void main(String[] args) {
+        //Todo Auto-generated method stub
+
+        Produto p = new Produto("Depilador facial", 129.90, 100);
+
+        Produto p2 = new Produto("Forceps Caseiro de Barro", 1.50, 1000);
+
+        p.adicionarEstoque(100);
+        System.out.println("A quantidade do estoque é" + p.getEstoque());
+
+
+
+
+    }
+
+}
