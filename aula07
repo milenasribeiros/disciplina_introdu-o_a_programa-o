@@ -1,0 +1,56 @@
+package entities;
+
+public class Produto {
+
+    private String nome;
+    private double preco;
+    private int estoque;
+
+    public Produto(){
+
+    }
+
+    public Produto(String nome, double preco, int estoque){
+
+        this.nome = nome;
+        this.preco = preco;
+        this.estoque = estoque;
+
+    }
+
+    public Produto(String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preço) {
+        this.preco = preço;
+    }
+
+    public int getEstoque() {
+        return estoque;
+    }
+
+
+    public void adicionarEstoque(int qtditens){
+        this.estoque += qtditens;
+    }
+
+    public void reduzirEstoque(int qtditens){
+        System.out.println("Quantidade atual do Estoque: %d, this.estoque");
+        this.estoque -= qtditens;
+        System.out.println("Quantidade reduzida do Estoque: %d, this.estoque");
+    }
+}
